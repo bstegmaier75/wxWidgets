@@ -15,6 +15,8 @@
 
 #if defined(__WXDFB__)
     #define wxHAS_NATIVE_OVERLAY 1
+#elif defined(__WXMAC__)
+    #define wxHAS_NATIVE_OVERLAY 1
 #else
     // don't define wxHAS_NATIVE_OVERLAY
 #endif
